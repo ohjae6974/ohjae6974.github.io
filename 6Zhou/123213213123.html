@@ -1,0 +1,52 @@
+
+<!doctype html> <!-- movie.html -->
+
+<html><head><meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+
+<title>폼 과제</title>
+
+<script>
+
+function genre(obj) {
+var movie_a = ["쎈놈", "아이 엠 마더", "영웅", "잔 다르크"];
+
+var movie_b = ["해리 포터", "트와일라잇", "어벤져스: 엔드게임", "인 더 더스트"];
+
+var movie_c = ["기묘한 가족", "극한직업", "브라더 오브 더 이어", "가문의 영광"];
+
+var movie_d = ["이스케이프 룸", "겟 아웃", "어스", "곡성"];
+
+var target = document.getElementById("moviex");
+ if(obj.value == "a") var k = movie_a;
+else if(obj.value == "b") var k = movie_b;
+else if(obj.value == "c") var k = movie_c;
+else if(obj.value == "d") var k = movie_d;
+ 
+  target.options.length = 0;
+
+  for (x in k) {
+    var opt = document.createElement("option");
+    opt.value = k[x];
+    opt.innerHTML = k[x];
+    target.appendChild(opt);
+    }
+    }
+    </script>
+
+</head>
+<body>
+<section>
+<fieldset>
+<legend>영화</legend>
+<label for="genrex">장르</label>
+<select id="genrex" name="moviegenre" onchange ="genre(this)">
+<option value="a"selected>액션</option>
+<option value="b">SF/판타지</option>
+<option value="c">코미디</option>
+<option value="d">공포</option></select>
+<label for="movie">영화 제목</label>
+<select id="moviex" name="movie"></select>
+</fieldset>
+</section>
+</body>
+</html>

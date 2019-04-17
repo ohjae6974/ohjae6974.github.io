@@ -3,13 +3,9 @@
 <script>
 function genre(obj) {
 var  Game_a = ["메이플스토리", "던파", "로스트아크", "리니지"];
-
 var Game_b = ["롤", "사이퍼즈", "히오스", "도타2"];;
-
 var Game_c = ["서든어택", "스페셜포스2", "아바", "건즈"];
-
 var Game_d = ["프리스타일", "피파 온라인", "테일즈러너", "마구마구"];
-
 var target = document.getElementById("moviex");
  if(obj.value == "a") var k = movie_a;
 else if(obj.value == "b") var k = movie_b;
@@ -23,7 +19,7 @@ target.options.length = 0;
     target.appendChild(opt);
     }
     }
-    </script>
+</script>
 </head>
 <body>
 <section>

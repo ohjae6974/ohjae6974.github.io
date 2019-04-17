@@ -1,4 +1,6 @@
+
 <!doctype html> <!-- Game.html -->
+
 <html><head><meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
 
 <script>
@@ -18,16 +20,16 @@ else if(obj.value == "b") var k = movie_b;
 else if(obj.value == "c") var k = movie_c;
 else if(obj.value == "d") var k = movie_d;
 
-  target.options.length = 0;
+target.options.length = 0;
   
-  for (x in k) {
-    var opt = document.createElement("option");
-    opt.value = k[x];
-    opt.innerHTML = k[x];
-    target.appendChild(opt);
+for (x in k) {
+var opt = document.createElement("option");
+opt.value = k[x];
+opt.innerHTML = k[x];
+target.appendChild(opt);
     }
     }
-    </script>
+</script>
 </head>
 <body>
 <section>

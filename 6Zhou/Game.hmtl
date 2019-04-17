@@ -16,7 +16,9 @@ var target = document.getElementById("moviex");
 else if(obj.value == "b") var k = movie_b;
 else if(obj.value == "c") var k = movie_c;
 else if(obj.value == "d") var k = movie_d;
+
   target.options.length = 0;
+  
   for (x in k) {
     var opt = document.createElement("option");
     opt.value = k[x];
